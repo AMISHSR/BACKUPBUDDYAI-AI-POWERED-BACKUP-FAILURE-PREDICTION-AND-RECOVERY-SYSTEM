@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Files{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy:~$ ls --protected</p>
+<h1>Protected files</h1>
+<p class="sub">Open a file to see its versions, download one, or restore it.</p>
+{% if files %}
+<div class="wide"><table>
+  <tr><th>file</th><th>last backup (utc)</th><th>sha256</th></tr>
+  {% for f in files %}
+  <tr><td><a href="{{ url_for('file_versions', key=f.path) }}">{{ f.path }}</a></td>
+      <td>{{ f.last_backup }}</td><td><span class="muted">{{ f.last_hash[:16] }}</span></td></tr>
+  {% endfor %}
+</table></div>
+{% else %}<div class="empty">no files backed up yet.</div>{% endif %}
+{% endblock %}

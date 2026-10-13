@@ -1,0 +1,6 @@
+.env
+*.db
+local_cloud/
+restored/
+__pycache__/
+venv/

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Versions{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy:~$ versions {{ key }}</p>
+<h1>Versions of <code>{{ key }}</code></h1>
+<p class="sub">Restore writes the chosen version into the <code>restored</code> folder. Download sends it to your browser. Your original file is never changed.</p>
+{% if versions %}
+<div class="wide"><table>
+  <tr><th>version</th><th>saved (utc)</th><th>size</th><th></th></tr>
+  {% for v in versions %}
+  <tr><td><code>{{ v.version_id }}</code></td><td>{{ v.modified }}</td><td>{{ v.size|fsize }}</td>
+    <td>
+      <form class="inline" method="post" action="{{ url_for('restore') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="key" value="{{ key }}"><input type="hidden" name="version_id" value="{{ v.version_id }}">
+        <button type="submit">restore</button></form>
+      <a class="btn alt" href="{{ url_for('download', key=key, version_id=v.version_id) }}">download</a>
+    </td></tr>
+  {% endfor %}
+</table></div>
+{% else %}<div class="empty">no versions found. for S3, confirm bucket versioning is enabled.</div>{% endif %}
+<p><a href="{{ url_for('files') }}">&lt; back to files</a></p>
+{% endblock %}

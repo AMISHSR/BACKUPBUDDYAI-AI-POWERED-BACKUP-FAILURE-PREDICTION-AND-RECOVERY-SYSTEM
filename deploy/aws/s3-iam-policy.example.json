@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListBackupBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:ListBucketVersions"],
+      "Resource": "arn:aws:s3:::REPLACE_WITH_BUCKET_NAME"
+    },
+    {
+      "Sid": "ReadWriteBackupObjectsWithoutDelete",
+      "Effect": "Allow",
+      "Action": ["s3:PutObject", "s3:GetObject", "s3:GetObjectVersion"],
+      "Resource": "arn:aws:s3:::REPLACE_WITH_BUCKET_NAME/*"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Alerts · BackupBuddy AI{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy@{{ backend_label }}:~$ alerts --recent</p>
+<h1>Alerts & notifications</h1>
+<p class="sub">Backup results and failures are recorded here. Opening this page marks current alerts as read.</p>
+{% if alerts %}
+  {% for a in alerts %}
+  <div class="threat" style="border-left:4px solid {{ '#f05d6c' if a.severity == 'critical' else '#e7ad4d' if a.severity == 'warning' else '#39c99a' }}">
+    <div class="muted">{{ a.created }} UTC · {{ a.severity|upper }}</div>
+    <h3>{{ a.title }}</h3><p>{{ a.message }}</p>
+    {% if a.job_id %}<a class="btn alt" href="{{ url_for('job_detail', job_id=a.job_id) }}">view job details</a>{% endif %}
+  </div>
+  {% endfor %}
+{% else %}<div class="clear">No alerts yet. Run a backup to create an event.</div>{% endif %}
+{% endblock %}

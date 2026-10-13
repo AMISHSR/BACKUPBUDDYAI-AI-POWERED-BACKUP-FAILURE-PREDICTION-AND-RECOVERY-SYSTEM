@@ -1,0 +1,8 @@
+.env
+*.db
+local_cloud/
+restored/
+venv/
+__pycache__/
+.git/
+.DS_Store

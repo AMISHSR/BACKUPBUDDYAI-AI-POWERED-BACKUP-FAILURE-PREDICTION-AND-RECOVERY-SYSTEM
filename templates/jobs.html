@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}History{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy:~$ history --last 100</p>
+<h1>Backup history</h1>
+<p class="sub">Every backup job, newest first.</p>
+{% if jobs %}
+<div class="wide"><table>
+  <tr><th>job</th><th>started (utc)</th><th>finished</th><th>trigger</th><th>status</th><th>uploaded</th><th>skipped</th><th>failed</th></tr>
+  {% for j in jobs %}
+  <tr><td><a href="{{ url_for('job_detail', job_id=j.id) }}">#{{ j.id }}</a></td><td>{{ j.started }}</td><td>{{ j.finished or '-' }}</td>
+    <td>{{ j.trigger }}</td><td><span class="tag {{ j.status }}">{{ j.status }}</span></td>
+    <td>{{ j.uploaded }}</td><td>{{ j.skipped }}</td><td>{{ j.failed }}</td></tr>
+  {% endfor %}
+</table></div>
+{% else %}<div class="empty">no backups yet. go to status and run one.</div>{% endif %}
+{% endblock %}

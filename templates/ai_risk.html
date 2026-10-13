@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}AI Risk | BackupBuddy AI{% endblock %}
+{% block content %}
+<h1>Backup failure risk</h1>
+<p class="sub">Uses historical backup outcomes to highlight files that may need attention. Risk estimates are guidance, not guarantees.</p>
+<div class="grid g-tiles">
+  <div class="tile"><b>{{ report.tracked_count }}</b><span>tracked files</span></div>
+  <div class="tile"><b>{{ report.history_count }}</b><span>historical outcomes</span></div>
+  <div class="tile {{ 'warn' if report.failure_count else 'ok' }}"><b>{{ report.failure_count }}</b><span>historical failures</span></div>
+  <div class="tile"><b>{{ report.model_accuracy ~ '%' if report.model_accuracy is not none else 'N/A' }}</b><span>holdout accuracy</span></div>
+</div>
+<div class="panel" style="margin-top:16px">
+  <h2>Model status</h2><p class="muted">{{ report.model_note }}</p>
+</div>
+<h2>Files to watch</h2>
+{% if report.items %}
+<div class="wide"><table>
+<tr><th>File</th><th>Risk</th><th>Last outcome</th><th>Recorded failures</th><th>Reason</th><th>Method</th></tr>
+{% for item in report.items %}
+<tr><td><code>{{ item.path }}</code></td><td><span class="{{ 'bad' if item.risk >= 60 else 'warn' if item.risk >= 30 else 'ok' }}">{{ item.risk }}%</span></td><td>{{ item.last_status }}</td><td>{{ item.failures }}</td><td>{{ item.reason }}</td><td>{{ item.method }}</td></tr>
+{% endfor %}
+</table></div>
+{% else %}<div class="empty">No tracked files yet. Run a backup to begin collecting history.</div>{% endif %}
+<div class="panel" style="margin-top:16px"><b>How to interpret this</b><p class="muted">With enough historical outcomes, the page trains a Random Forest classifier and reports a holdout score. Before enough examples exist, it explicitly uses a transparent rule-based baseline instead. A high risk score should prompt verification and a review of recent failures; it does not prove a future failure will occur.</p></div>
+{% endblock %}

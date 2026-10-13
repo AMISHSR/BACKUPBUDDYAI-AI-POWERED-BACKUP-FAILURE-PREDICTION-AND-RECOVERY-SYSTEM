@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Integrity{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy:~$ verify --all</p>
+<h1>Integrity check</h1>
+<p class="sub">Re-reads every stored backup and compares its SHA-256 with the checksum recorded at upload. It tells apart a
+  <b>missing</b> cloud object (upload lost or deleted) from a <b>mismatch</b> (object exists but the content differs).</p>
+
+<form method="post" action="{{ url_for('verify') }}" data-busy="verifying..."><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">run verification</button></form>
+
+{% if rows %}
+<h2>last scan: {{ run_at }} utc</h2>
+<div class="grid g-tiles" style="margin-bottom:16px">
+  <div class="tile ok"><b>{{ counts.OK }}</b><span>verified ok</span></div>
+  <div class="tile {{ 'bad' if counts.MISMATCH }}"><b>{{ counts.MISMATCH }}</b><span>content mismatch</span></div>
+  <div class="tile {{ 'bad' if counts.MISSING }}"><b>{{ counts.MISSING }}</b><span>missing in cloud</span></div>
+  <div class="tile {{ 'warn' if counts.ERROR }}"><b>{{ counts.ERROR }}</b><span>could not check</span></div>
+</div>
+<div class="wide"><table>
+  <tr><th>file</th><th>status</th><th>expected sha256</th><th>observed sha256</th></tr>
+  {% for r in rows %}
+  <tr><td><code>{{ r.path }}</code></td><td><span class="tag {{ r.status }}">{{ r.status }}</span></td>
+    <td class="muted">{{ (r.expected or '')[:16] }}</td><td class="muted">{{ (r.observed or '-')[:16] }}</td></tr>
+  {% endfor %}
+</table></div>
+{% else %}<h2>last scan</h2><div class="empty">no verification has been run yet.</div>{% endif %}
+{% endblock %}

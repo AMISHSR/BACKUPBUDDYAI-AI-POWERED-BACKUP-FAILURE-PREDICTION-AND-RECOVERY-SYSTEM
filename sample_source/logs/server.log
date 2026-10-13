@@ -1,0 +1,600 @@
+2026-09-01 10:00:00 ERROR Cache refreshed
+2026-09-02 10:01:07 WARN Request /api/books 200
+2026-09-03 10:02:14 INFO Cache refreshed
+2026-09-04 10:03:21 INFO Cache refreshed
+2026-09-05 10:04:28 INFO Connection reset by peer
+2026-09-06 10:05:35 INFO Request /api/books 200
+2026-09-07 10:06:42 INFO Slow query 1.8s
+2026-09-08 10:07:49 ERROR Slow query 1.8s
+2026-09-09 10:08:56 ERROR Request /api/books 200
+2026-09-10 10:09:03 WARN Request /api/books 200
+2026-09-11 10:10:10 ERROR Cache refreshed
+2026-09-12 10:11:17 WARN Slow query 1.8s
+2026-09-13 10:12:24 INFO Slow query 1.8s
+2026-09-14 10:13:31 ERROR Slow query 1.8s
+2026-09-15 10:14:38 INFO User login ok
+2026-09-16 10:15:45 INFO Connection reset by peer
+2026-09-17 10:16:52 WARN Slow query 1.8s
+2026-09-18 10:17:59 INFO Slow query 1.8s
+2026-09-19 10:18:06 ERROR Slow query 1.8s
+2026-09-20 10:19:13 INFO Slow query 1.8s
+2026-09-21 10:20:20 WARN User login ok
+2026-09-22 10:21:27 INFO Cache refreshed
+2026-09-23 10:22:34 INFO Slow query 1.8s
+2026-09-24 10:23:41 INFO User login ok
+2026-09-25 10:24:48 WARN Connection reset by peer
+2026-09-26 10:25:55 ERROR User login ok
+2026-09-27 10:26:02 INFO Cache refreshed
+2026-09-28 10:27:09 INFO Request /api/books 200
+2026-09-01 10:28:16 ERROR User login ok
+2026-09-02 10:29:23 INFO Connection reset by peer
+2026-09-03 10:30:30 WARN Cache refreshed
+2026-09-04 10:31:37 INFO User login ok
+2026-09-05 10:32:44 ERROR User login ok
+2026-09-06 10:33:51 INFO Cache refreshed
+2026-09-07 10:34:58 WARN Request /api/books 200
+2026-09-08 10:35:05 INFO Cache refreshed
+2026-09-09 10:36:12 INFO Request /api/books 200
+2026-09-10 10:37:19 ERROR Request /api/books 200
+2026-09-11 10:38:26 INFO Request /api/books 200
+2026-09-12 10:39:33 ERROR Request /api/books 200
+2026-09-13 10:40:40 WARN Cache refreshed
+2026-09-14 10:41:47 INFO Connection reset by peer
+2026-09-15 10:42:54 WARN Cache refreshed
+2026-09-16 10:43:01 ERROR Request /api/books 200
+2026-09-17 10:44:08 ERROR Connection reset by peer
+2026-09-18 10:45:15 INFO Request /api/books 200
+2026-09-19 10:46:22 INFO User login ok
+2026-09-20 10:47:29 INFO Cache refreshed
+2026-09-21 10:48:36 WARN Cache refreshed
+2026-09-22 10:49:43 INFO Request /api/books 200
+2026-09-23 10:50:50 WARN Cache refreshed
+2026-09-24 10:51:57 INFO User login ok
+2026-09-25 10:52:04 ERROR User login ok
+2026-09-26 10:53:11 INFO Slow query 1.8s
+2026-09-27 10:54:18 ERROR Connection reset by peer
+2026-09-28 10:55:25 ERROR User login ok
+2026-09-01 10:56:32 INFO Connection reset by peer
+2026-09-02 10:57:39 WARN Request /api/books 200
+2026-09-03 10:58:46 INFO Slow query 1.8s
+2026-09-04 10:59:53 INFO Connection reset by peer
+2026-09-05 10:00:00 INFO Request /api/books 200
+2026-09-06 10:01:07 INFO User login ok
+2026-09-07 10:02:14 WARN Cache refreshed
+2026-09-08 10:03:21 INFO Connection reset by peer
+2026-09-09 10:04:28 INFO Request /api/books 200
+2026-09-10 10:05:35 ERROR Request /api/books 200
+2026-09-11 10:06:42 INFO Connection reset by peer
+2026-09-12 10:07:49 INFO User login ok
+2026-09-13 10:08:56 INFO Cache refreshed
+2026-09-14 10:09:03 INFO Request /api/books 200
+2026-09-15 10:10:10 ERROR Slow query 1.8s
+2026-09-16 10:11:17 WARN Connection reset by peer
+2026-09-17 10:12:24 INFO User login ok
+2026-09-18 10:13:31 INFO Slow query 1.8s
+2026-09-19 10:14:38 INFO Connection reset by peer
+2026-09-20 10:15:45 INFO User login ok
+2026-09-21 10:16:52 INFO User login ok
+2026-09-22 10:17:59 ERROR Request /api/books 200
+2026-09-23 10:18:06 INFO User login ok
+2026-09-24 10:19:13 ERROR Request /api/books 200
+2026-09-25 10:20:20 ERROR Cache refreshed
+2026-09-26 10:21:27 WARN Connection reset by peer
+2026-09-27 10:22:34 INFO Connection reset by peer
+2026-09-28 10:23:41 INFO Cache refreshed
+2026-09-01 10:24:48 INFO Connection reset by peer
+2026-09-02 10:25:55 WARN Cache refreshed
+2026-09-03 10:26:02 INFO User login ok
+2026-09-04 10:27:09 INFO Cache refreshed
+2026-09-05 10:28:16 WARN User login ok
+2026-09-06 10:29:23 INFO Cache refreshed
+2026-09-07 10:30:30 INFO Slow query 1.8s
+2026-09-08 10:31:37 INFO User login ok
+2026-09-09 10:32:44 INFO Connection reset by peer
+2026-09-10 10:33:51 INFO Connection reset by peer
+2026-09-11 10:34:58 ERROR Slow query 1.8s
+2026-09-12 10:35:05 ERROR Connection reset by peer
+2026-09-13 10:36:12 WARN Cache refreshed
+2026-09-14 10:37:19 INFO User login ok
+2026-09-15 10:38:26 INFO User login ok
+2026-09-16 10:39:33 ERROR User login ok
+2026-09-17 10:40:40 WARN Cache refreshed
+2026-09-18 10:41:47 INFO Cache refreshed
+2026-09-19 10:42:54 INFO User login ok
+2026-09-20 10:43:01 INFO Connection reset by peer
+2026-09-21 10:44:08 ERROR Cache refreshed
+2026-09-22 10:45:15 INFO Slow query 1.8s
+2026-09-23 10:46:22 INFO Connection reset by peer
+2026-09-24 10:47:29 ERROR Connection reset by peer
+2026-09-25 10:48:36 WARN Connection reset by peer
+2026-09-26 10:49:43 INFO Connection reset by peer
+2026-09-27 10:50:50 INFO User login ok
+2026-09-28 10:51:57 INFO User login ok
+2026-09-01 10:52:04 WARN Connection reset by peer
+2026-09-02 10:53:11 INFO Slow query 1.8s
+2026-09-03 10:54:18 WARN Slow query 1.8s
+2026-09-04 10:55:25 INFO Slow query 1.8s
+2026-09-05 10:56:32 INFO Cache refreshed
+2026-09-06 10:57:39 INFO Request /api/books 200
+2026-09-07 10:58:46 INFO User login ok
+2026-09-08 10:59:53 INFO Request /api/books 200
+2026-09-09 10:00:00 INFO User login ok
+2026-09-10 10:01:07 INFO Connection reset by peer
+2026-09-11 10:02:14 WARN Connection reset by peer
+2026-09-12 10:03:21 INFO Request /api/books 200
+2026-09-13 10:04:28 INFO User login ok
+2026-09-14 10:05:35 ERROR User login ok
+2026-09-15 10:06:42 INFO Request /api/books 200
+2026-09-16 10:07:49 INFO Cache refreshed
+2026-09-17 10:08:56 INFO Request /api/books 200
+2026-09-18 10:09:03 INFO Slow query 1.8s
+2026-09-19 10:10:10 INFO Connection reset by peer
+2026-09-20 10:11:17 INFO Slow query 1.8s
+2026-09-21 10:12:24 ERROR Slow query 1.8s
+2026-09-22 10:13:31 WARN Connection reset by peer
+2026-09-23 10:14:38 INFO User login ok
+2026-09-24 10:15:45 WARN Cache refreshed
+2026-09-25 10:16:52 ERROR Request /api/books 200
+2026-09-26 10:17:59 INFO Slow query 1.8s
+2026-09-27 10:18:06 ERROR Connection reset by peer
+2026-09-28 10:19:13 INFO Connection reset by peer
+2026-09-01 10:20:20 INFO Cache refreshed
+2026-09-02 10:21:27 INFO User login ok
+2026-09-03 10:22:34 INFO User login ok
+2026-09-04 10:23:41 ERROR Cache refreshed
+2026-09-05 10:24:48 INFO Cache refreshed
+2026-09-06 10:25:55 INFO User login ok
+2026-09-07 10:26:02 INFO Cache refreshed
+2026-09-08 10:27:09 INFO User login ok
+2026-09-09 10:28:16 INFO User login ok
+2026-09-10 10:29:23 ERROR Request /api/books 200
+2026-09-11 10:30:30 INFO Connection reset by peer
+2026-09-12 10:31:37 INFO Slow query 1.8s
+2026-09-13 10:32:44 INFO Cache refreshed
+2026-09-14 10:33:51 INFO Cache refreshed
+2026-09-15 10:34:58 INFO User login ok
+2026-09-16 10:35:05 INFO User login ok
+2026-09-17 10:36:12 INFO Slow query 1.8s
+2026-09-18 10:37:19 INFO Cache refreshed
+2026-09-19 10:38:26 INFO Cache refreshed
+2026-09-20 10:39:33 INFO Request /api/books 200
+2026-09-21 10:40:40 INFO Slow query 1.8s
+2026-09-22 10:41:47 INFO User login ok
+2026-09-23 10:42:54 INFO Request /api/books 200
+2026-09-24 10:43:01 INFO User login ok
+2026-09-25 10:44:08 INFO Request /api/books 200
+2026-09-26 10:45:15 ERROR Connection reset by peer
+2026-09-27 10:46:22 WARN Request /api/books 200
+2026-09-28 10:47:29 ERROR User login ok
+2026-09-01 10:48:36 WARN User login ok
+2026-09-02 10:49:43 WARN Connection reset by peer
+2026-09-03 10:50:50 INFO Request /api/books 200
+2026-09-04 10:51:57 WARN User login ok
+2026-09-05 10:52:04 ERROR Connection reset by peer
+2026-09-06 10:53:11 INFO User login ok
+2026-09-07 10:54:18 ERROR Request /api/books 200
+2026-09-08 10:55:25 INFO Slow query 1.8s
+2026-09-09 10:56:32 INFO Connection reset by peer
+2026-09-10 10:57:39 INFO Request /api/books 200
+2026-09-11 10:58:46 INFO User login ok
+2026-09-12 10:59:53 INFO Slow query 1.8s
+2026-09-13 10:00:00 INFO Slow query 1.8s
+2026-09-14 10:01:07 INFO Slow query 1.8s
+2026-09-15 10:02:14 ERROR Request /api/books 200
+2026-09-16 10:03:21 ERROR Request /api/books 200
+2026-09-17 10:04:28 ERROR Cache refreshed
+2026-09-18 10:05:35 INFO Cache refreshed
+2026-09-19 10:06:42 INFO Slow query 1.8s
+2026-09-20 10:07:49 INFO User login ok
+2026-09-21 10:08:56 INFO Slow query 1.8s
+2026-09-22 10:09:03 ERROR User login ok
+2026-09-23 10:10:10 INFO Request /api/books 200
+2026-09-24 10:11:17 INFO Slow query 1.8s
+2026-09-25 10:12:24 WARN User login ok
+2026-09-26 10:13:31 WARN User login ok
+2026-09-27 10:14:38 INFO Cache refreshed
+2026-09-28 10:15:45 INFO Request /api/books 200
+2026-09-01 10:16:52 WARN Connection reset by peer
+2026-09-02 10:17:59 ERROR Cache refreshed
+2026-09-03 10:18:06 WARN Cache refreshed
+2026-09-04 10:19:13 WARN Cache refreshed
+2026-09-05 10:20:20 ERROR Connection reset by peer
+2026-09-06 10:21:27 ERROR User login ok
+2026-09-07 10:22:34 INFO Connection reset by peer
+2026-09-08 10:23:41 INFO Connection reset by peer
+2026-09-09 10:24:48 INFO Slow query 1.8s
+2026-09-10 10:25:55 ERROR Request /api/books 200
+2026-09-11 10:26:02 INFO Slow query 1.8s
+2026-09-12 10:27:09 WARN Request /api/books 200
+2026-09-13 10:28:16 ERROR Cache refreshed
+2026-09-14 10:29:23 INFO Request /api/books 200
+2026-09-15 10:30:30 WARN Cache refreshed
+2026-09-16 10:31:37 ERROR Cache refreshed
+2026-09-17 10:32:44 INFO Request /api/books 200
+2026-09-18 10:33:51 ERROR Cache refreshed
+2026-09-19 10:34:58 INFO Cache refreshed
+2026-09-20 10:35:05 INFO Connection reset by peer
+2026-09-21 10:36:12 ERROR Request /api/books 200
+2026-09-22 10:37:19 INFO Cache refreshed
+2026-09-23 10:38:26 INFO Cache refreshed
+2026-09-24 10:39:33 INFO User login ok
+2026-09-25 10:40:40 INFO User login ok
+2026-09-26 10:41:47 INFO Slow query 1.8s
+2026-09-27 10:42:54 INFO Cache refreshed
+2026-09-28 10:43:01 INFO Request /api/books 200
+2026-09-01 10:44:08 WARN Request /api/books 200
+2026-09-02 10:45:15 INFO User login ok
+2026-09-03 10:46:22 INFO Request /api/books 200
+2026-09-04 10:47:29 INFO Slow query 1.8s
+2026-09-05 10:48:36 WARN User login ok
+2026-09-06 10:49:43 INFO Slow query 1.8s
+2026-09-07 10:50:50 WARN Cache refreshed
+2026-09-08 10:51:57 ERROR Request /api/books 200
+2026-09-09 10:52:04 WARN User login ok
+2026-09-10 10:53:11 INFO Request /api/books 200
+2026-09-11 10:54:18 ERROR Slow query 1.8s
+2026-09-12 10:55:25 INFO Cache refreshed
+2026-09-13 10:56:32 WARN Connection reset by peer
+2026-09-14 10:57:39 ERROR Slow query 1.8s
+2026-09-15 10:58:46 INFO Connection reset by peer
+2026-09-16 10:59:53 INFO Cache refreshed
+2026-09-17 10:00:00 INFO Slow query 1.8s
+2026-09-18 10:01:07 WARN Request /api/books 200
+2026-09-19 10:02:14 INFO User login ok
+2026-09-20 10:03:21 WARN Cache refreshed
+2026-09-21 10:04:28 WARN Cache refreshed
+2026-09-22 10:05:35 INFO Slow query 1.8s
+2026-09-23 10:06:42 WARN Slow query 1.8s
+2026-09-24 10:07:49 INFO Connection reset by peer
+2026-09-25 10:08:56 WARN Connection reset by peer
+2026-09-26 10:09:03 INFO Request /api/books 200
+2026-09-27 10:10:10 INFO Slow query 1.8s
+2026-09-28 10:11:17 WARN User login ok
+2026-09-01 10:12:24 INFO Request /api/books 200
+2026-09-02 10:13:31 ERROR Cache refreshed
+2026-09-03 10:14:38 INFO Cache refreshed
+2026-09-04 10:15:45 ERROR Request /api/books 200
+2026-09-05 10:16:52 INFO Connection reset by peer
+2026-09-06 10:17:59 WARN Connection reset by peer
+2026-09-07 10:18:06 INFO Slow query 1.8s
+2026-09-08 10:19:13 ERROR User login ok
+2026-09-09 10:20:20 INFO Connection reset by peer
+2026-09-10 10:21:27 INFO Slow query 1.8s
+2026-09-11 10:22:34 WARN Cache refreshed
+2026-09-12 10:23:41 INFO Slow query 1.8s
+2026-09-13 10:24:48 ERROR User login ok
+2026-09-14 10:25:55 ERROR Request /api/books 200
+2026-09-15 10:26:02 INFO Request /api/books 200
+2026-09-16 10:27:09 INFO Slow query 1.8s
+2026-09-17 10:28:16 WARN User login ok
+2026-09-18 10:29:23 INFO User login ok
+2026-09-19 10:30:30 WARN Slow query 1.8s
+2026-09-20 10:31:37 INFO Connection reset by peer
+2026-09-21 10:32:44 INFO User login ok
+2026-09-22 10:33:51 INFO Request /api/books 200
+2026-09-23 10:34:58 WARN Connection reset by peer
+2026-09-24 10:35:05 INFO Slow query 1.8s
+2026-09-25 10:36:12 WARN Cache refreshed
+2026-09-26 10:37:19 INFO Cache refreshed
+2026-09-27 10:38:26 INFO Cache refreshed
+2026-09-28 10:39:33 WARN Connection reset by peer
+2026-09-01 10:40:40 INFO Cache refreshed
+2026-09-02 10:41:47 INFO Slow query 1.8s
+2026-09-03 10:42:54 WARN Request /api/books 200
+2026-09-04 10:43:01 ERROR Cache refreshed
+2026-09-05 10:44:08 WARN Request /api/books 200
+2026-09-06 10:45:15 INFO Request /api/books 200
+2026-09-07 10:46:22 WARN Request /api/books 200
+2026-09-08 10:47:29 WARN Cache refreshed
+2026-09-09 10:48:36 WARN User login ok
+2026-09-10 10:49:43 INFO Request /api/books 200
+2026-09-11 10:50:50 INFO Request /api/books 200
+2026-09-12 10:51:57 INFO Slow query 1.8s
+2026-09-13 10:52:04 WARN Slow query 1.8s
+2026-09-14 10:53:11 ERROR User login ok
+2026-09-15 10:54:18 INFO Cache refreshed
+2026-09-16 10:55:25 INFO Slow query 1.8s
+2026-09-17 10:56:32 INFO User login ok
+2026-09-18 10:57:39 ERROR Request /api/books 200
+2026-09-19 10:58:46 INFO Connection reset by peer
+2026-09-20 10:59:53 INFO Connection reset by peer
+2026-09-21 10:00:00 INFO User login ok
+2026-09-22 10:01:07 INFO User login ok
+2026-09-23 10:02:14 INFO Request /api/books 200
+2026-09-24 10:03:21 ERROR User login ok
+2026-09-25 10:04:28 ERROR Cache refreshed
+2026-09-26 10:05:35 INFO Cache refreshed
+2026-09-27 10:06:42 WARN Request /api/books 200
+2026-09-28 10:07:49 INFO Cache refreshed
+2026-09-01 10:08:56 WARN Connection reset by peer
+2026-09-02 10:09:03 INFO Connection reset by peer
+2026-09-03 10:10:10 ERROR User login ok
+2026-09-04 10:11:17 ERROR Request /api/books 200
+2026-09-05 10:12:24 INFO Slow query 1.8s
+2026-09-06 10:13:31 INFO Connection reset by peer
+2026-09-07 10:14:38 INFO Slow query 1.8s
+2026-09-08 10:15:45 INFO Connection reset by peer
+2026-09-09 10:16:52 INFO Request /api/books 200
+2026-09-10 10:17:59 WARN Cache refreshed
+2026-09-11 10:18:06 INFO Slow query 1.8s
+2026-09-12 10:19:13 WARN Connection reset by peer
+2026-09-13 10:20:20 INFO Slow query 1.8s
+2026-09-14 10:21:27 WARN Cache refreshed
+2026-09-15 10:22:34 WARN Cache refreshed
+2026-09-16 10:23:41 WARN Cache refreshed
+2026-09-17 10:24:48 ERROR Connection reset by peer
+2026-09-18 10:25:55 INFO Cache refreshed
+2026-09-19 10:26:02 INFO Slow query 1.8s
+2026-09-20 10:27:09 ERROR Slow query 1.8s
+2026-09-21 10:28:16 INFO Slow query 1.8s
+2026-09-22 10:29:23 INFO Slow query 1.8s
+2026-09-23 10:30:30 WARN User login ok
+2026-09-24 10:31:37 INFO Request /api/books 200
+2026-09-25 10:32:44 INFO User login ok
+2026-09-26 10:33:51 ERROR User login ok
+2026-09-27 10:34:58 INFO User login ok
+2026-09-28 10:35:05 ERROR Slow query 1.8s
+2026-09-01 10:36:12 WARN Cache refreshed
+2026-09-02 10:37:19 INFO Cache refreshed
+2026-09-03 10:38:26 WARN Cache refreshed
+2026-09-04 10:39:33 INFO User login ok
+2026-09-05 10:40:40 INFO Request /api/books 200
+2026-09-06 10:41:47 WARN Connection reset by peer
+2026-09-07 10:42:54 ERROR Cache refreshed
+2026-09-08 10:43:01 INFO Slow query 1.8s
+2026-09-09 10:44:08 INFO Slow query 1.8s
+2026-09-10 10:45:15 INFO Connection reset by peer
+2026-09-11 10:46:22 INFO Request /api/books 200
+2026-09-12 10:47:29 INFO Request /api/books 200
+2026-09-13 10:48:36 WARN Slow query 1.8s
+2026-09-14 10:49:43 INFO Connection reset by peer
+2026-09-15 10:50:50 INFO Connection reset by peer
+2026-09-16 10:51:57 INFO Cache refreshed
+2026-09-17 10:52:04 WARN User login ok
+2026-09-18 10:53:11 INFO Cache refreshed
+2026-09-19 10:54:18 INFO Request /api/books 200
+2026-09-20 10:55:25 INFO Connection reset by peer
+2026-09-21 10:56:32 INFO User login ok
+2026-09-22 10:57:39 WARN Connection reset by peer
+2026-09-23 10:58:46 WARN Connection reset by peer
+2026-09-24 10:59:53 ERROR User login ok
+2026-09-25 10:00:00 WARN Request /api/books 200
+2026-09-26 10:01:07 INFO User login ok
+2026-09-27 10:02:14 INFO Cache refreshed
+2026-09-28 10:03:21 WARN Connection reset by peer
+2026-09-01 10:04:28 INFO Connection reset by peer
+2026-09-02 10:05:35 ERROR Connection reset by peer
+2026-09-03 10:06:42 WARN Connection reset by peer
+2026-09-04 10:07:49 INFO Connection reset by peer
+2026-09-05 10:08:56 INFO Cache refreshed
+2026-09-06 10:09:03 INFO Slow query 1.8s
+2026-09-07 10:10:10 INFO User login ok
+2026-09-08 10:11:17 INFO User login ok
+2026-09-09 10:12:24 WARN User login ok
+2026-09-10 10:13:31 INFO Request /api/books 200
+2026-09-11 10:14:38 INFO Request /api/books 200
+2026-09-12 10:15:45 ERROR Request /api/books 200
+2026-09-13 10:16:52 INFO Cache refreshed
+2026-09-14 10:17:59 WARN User login ok
+2026-09-15 10:18:06 INFO User login ok
+2026-09-16 10:19:13 WARN Connection reset by peer
+2026-09-17 10:20:20 ERROR User login ok
+2026-09-18 10:21:27 WARN Connection reset by peer
+2026-09-19 10:22:34 ERROR User login ok
+2026-09-20 10:23:41 INFO Slow query 1.8s
+2026-09-21 10:24:48 ERROR Slow query 1.8s
+2026-09-22 10:25:55 WARN User login ok
+2026-09-23 10:26:02 INFO Slow query 1.8s
+2026-09-24 10:27:09 ERROR Connection reset by peer
+2026-09-25 10:28:16 INFO Slow query 1.8s
+2026-09-26 10:29:23 WARN Connection reset by peer
+2026-09-27 10:30:30 INFO User login ok
+2026-09-28 10:31:37 WARN Cache refreshed
+2026-09-01 10:32:44 INFO User login ok
+2026-09-02 10:33:51 WARN User login ok
+2026-09-03 10:34:58 INFO User login ok
+2026-09-04 10:35:05 INFO Cache refreshed
+2026-09-05 10:36:12 INFO Cache refreshed
+2026-09-06 10:37:19 WARN User login ok
+2026-09-07 10:38:26 INFO Connection reset by peer
+2026-09-08 10:39:33 INFO Slow query 1.8s
+2026-09-09 10:40:40 INFO User login ok
+2026-09-10 10:41:47 INFO Cache refreshed
+2026-09-11 10:42:54 INFO Request /api/books 200
+2026-09-12 10:43:01 ERROR Slow query 1.8s
+2026-09-13 10:44:08 WARN Request /api/books 200
+2026-09-14 10:45:15 INFO User login ok
+2026-09-15 10:46:22 INFO User login ok
+2026-09-16 10:47:29 INFO Connection reset by peer
+2026-09-17 10:48:36 INFO Slow query 1.8s
+2026-09-18 10:49:43 INFO Request /api/books 200
+2026-09-19 10:50:50 ERROR Cache refreshed
+2026-09-20 10:51:57 WARN Connection reset by peer
+2026-09-21 10:52:04 INFO Request /api/books 200
+2026-09-22 10:53:11 INFO Connection reset by peer
+2026-09-23 10:54:18 WARN Slow query 1.8s
+2026-09-24 10:55:25 INFO Cache refreshed
+2026-09-25 10:56:32 INFO Request /api/books 200
+2026-09-26 10:57:39 INFO Slow query 1.8s
+2026-09-27 10:58:46 WARN Slow query 1.8s
+2026-09-28 10:59:53 WARN Request /api/books 200
+2026-09-01 10:00:00 ERROR Request /api/books 200
+2026-09-02 10:01:07 INFO Request /api/books 200
+2026-09-03 10:02:14 INFO Connection reset by peer
+2026-09-04 10:03:21 ERROR Request /api/books 200
+2026-09-05 10:04:28 ERROR User login ok
+2026-09-06 10:05:35 INFO Connection reset by peer
+2026-09-07 10:06:42 INFO Connection reset by peer
+2026-09-08 10:07:49 WARN Cache refreshed
+2026-09-09 10:08:56 WARN Slow query 1.8s
+2026-09-10 10:09:03 WARN Connection reset by peer
+2026-09-11 10:10:10 INFO Slow query 1.8s
+2026-09-12 10:11:17 INFO User login ok
+2026-09-13 10:12:24 INFO Request /api/books 200
+2026-09-14 10:13:31 INFO Slow query 1.8s
+2026-09-15 10:14:38 INFO Connection reset by peer
+2026-09-16 10:15:45 INFO Request /api/books 200
+2026-09-17 10:16:52 INFO Connection reset by peer
+2026-09-18 10:17:59 INFO Request /api/books 200
+2026-09-19 10:18:06 ERROR Slow query 1.8s
+2026-09-20 10:19:13 INFO Connection reset by peer
+2026-09-21 10:20:20 INFO Connection reset by peer
+2026-09-22 10:21:27 ERROR Slow query 1.8s
+2026-09-23 10:22:34 WARN Cache refreshed
+2026-09-24 10:23:41 INFO Request /api/books 200
+2026-09-25 10:24:48 ERROR User login ok
+2026-09-26 10:25:55 WARN Slow query 1.8s
+2026-09-27 10:26:02 INFO Request /api/books 200
+2026-09-28 10:27:09 ERROR User login ok
+2026-09-01 10:28:16 WARN Slow query 1.8s
+2026-09-02 10:29:23 ERROR User login ok
+2026-09-03 10:30:30 ERROR Request /api/books 200
+2026-09-04 10:31:37 INFO Cache refreshed
+2026-09-05 10:32:44 WARN Connection reset by peer
+2026-09-06 10:33:51 ERROR Request /api/books 200
+2026-09-07 10:34:58 ERROR Request /api/books 200
+2026-09-08 10:35:05 WARN Connection reset by peer
+2026-09-09 10:36:12 ERROR Cache refreshed
+2026-09-10 10:37:19 INFO Cache refreshed
+2026-09-11 10:38:26 INFO User login ok
+2026-09-12 10:39:33 INFO Request /api/books 200
+2026-09-13 10:40:40 INFO Connection reset by peer
+2026-09-14 10:41:47 ERROR Request /api/books 200
+2026-09-15 10:42:54 WARN Connection reset by peer
+2026-09-16 10:43:01 INFO Cache refreshed
+2026-09-17 10:44:08 INFO Slow query 1.8s
+2026-09-18 10:45:15 INFO User login ok
+2026-09-19 10:46:22 INFO Slow query 1.8s
+2026-09-20 10:47:29 INFO Cache refreshed
+2026-09-21 10:48:36 INFO Connection reset by peer
+2026-09-22 10:49:43 INFO Request /api/books 200
+2026-09-23 10:50:50 INFO Connection reset by peer
+2026-09-24 10:51:57 ERROR User login ok
+2026-09-25 10:52:04 INFO User login ok
+2026-09-26 10:53:11 INFO Connection reset by peer
+2026-09-27 10:54:18 WARN Connection reset by peer
+2026-09-28 10:55:25 ERROR Cache refreshed
+2026-09-01 10:56:32 INFO Request /api/books 200
+2026-09-02 10:57:39 WARN User login ok
+2026-09-03 10:58:46 WARN Connection reset by peer
+2026-09-04 10:59:53 ERROR Cache refreshed
+2026-09-05 10:00:00 INFO User login ok
+2026-09-06 10:01:07 INFO Cache refreshed
+2026-09-07 10:02:14 INFO Slow query 1.8s
+2026-09-08 10:03:21 INFO User login ok
+2026-09-09 10:04:28 INFO User login ok
+2026-09-10 10:05:35 ERROR Request /api/books 200
+2026-09-11 10:06:42 WARN Slow query 1.8s
+2026-09-12 10:07:49 INFO Connection reset by peer
+2026-09-13 10:08:56 WARN User login ok
+2026-09-14 10:09:03 INFO Request /api/books 200
+2026-09-15 10:10:10 INFO Connection reset by peer
+2026-09-16 10:11:17 INFO User login ok
+2026-09-17 10:12:24 ERROR Slow query 1.8s
+2026-09-18 10:13:31 INFO Slow query 1.8s
+2026-09-19 10:14:38 INFO Request /api/books 200
+2026-09-20 10:15:45 INFO Cache refreshed
+2026-09-21 10:16:52 INFO User login ok
+2026-09-22 10:17:59 INFO Request /api/books 200
+2026-09-23 10:18:06 INFO Connection reset by peer
+2026-09-24 10:19:13 INFO User login ok
+2026-09-25 10:20:20 INFO Connection reset by peer
+2026-09-26 10:21:27 WARN User login ok
+2026-09-27 10:22:34 INFO Cache refreshed
+2026-09-28 10:23:41 INFO User login ok
+2026-09-01 10:24:48 INFO Request /api/books 200
+2026-09-02 10:25:55 ERROR Connection reset by peer
+2026-09-03 10:26:02 WARN User login ok
+2026-09-04 10:27:09 WARN Request /api/books 200
+2026-09-05 10:28:16 INFO Request /api/books 200
+2026-09-06 10:29:23 WARN User login ok
+2026-09-07 10:30:30 INFO Slow query 1.8s
+2026-09-08 10:31:37 WARN Cache refreshed
+2026-09-09 10:32:44 WARN Cache refreshed
+2026-09-10 10:33:51 INFO User login ok
+2026-09-11 10:34:58 WARN Cache refreshed
+2026-09-12 10:35:05 INFO Cache refreshed
+2026-09-13 10:36:12 INFO User login ok
+2026-09-14 10:37:19 ERROR Request /api/books 200
+2026-09-15 10:38:26 INFO Slow query 1.8s
+2026-09-16 10:39:33 INFO Slow query 1.8s
+2026-09-17 10:40:40 INFO User login ok
+2026-09-18 10:41:47 WARN Request /api/books 200
+2026-09-19 10:42:54 INFO Cache refreshed
+2026-09-20 10:43:01 WARN User login ok
+2026-09-21 10:44:08 INFO Cache refreshed
+2026-09-22 10:45:15 INFO Cache refreshed
+2026-09-23 10:46:22 INFO Cache refreshed
+2026-09-24 10:47:29 WARN Connection reset by peer
+2026-09-25 10:48:36 INFO Slow query 1.8s
+2026-09-26 10:49:43 INFO Request /api/books 200
+2026-09-27 10:50:50 WARN Slow query 1.8s
+2026-09-28 10:51:57 INFO Cache refreshed
+2026-09-01 10:52:04 INFO Request /api/books 200
+2026-09-02 10:53:11 ERROR Request /api/books 200
+2026-09-03 10:54:18 INFO Cache refreshed
+2026-09-04 10:55:25 INFO Slow query 1.8s
+2026-09-05 10:56:32 INFO Request /api/books 200
+2026-09-06 10:57:39 WARN Slow query 1.8s
+2026-09-07 10:58:46 INFO Cache refreshed
+2026-09-08 10:59:53 ERROR User login ok
+2026-09-09 10:00:00 INFO Connection reset by peer
+2026-09-10 10:01:07 WARN Request /api/books 200
+2026-09-11 10:02:14 INFO Request /api/books 200
+2026-09-12 10:03:21 INFO Request /api/books 200
+2026-09-13 10:04:28 WARN Request /api/books 200
+2026-09-14 10:05:35 INFO Cache refreshed
+2026-09-15 10:06:42 INFO Slow query 1.8s
+2026-09-16 10:07:49 INFO Slow query 1.8s
+2026-09-17 10:08:56 INFO User login ok
+2026-09-18 10:09:03 INFO Cache refreshed
+2026-09-19 10:10:10 INFO Slow query 1.8s
+2026-09-20 10:11:17 ERROR Request /api/books 200
+2026-09-21 10:12:24 ERROR Cache refreshed
+2026-09-22 10:13:31 WARN User login ok
+2026-09-23 10:14:38 ERROR Request /api/books 200
+2026-09-24 10:15:45 INFO Request /api/books 200
+2026-09-25 10:16:52 WARN User login ok
+2026-09-26 10:17:59 WARN Cache refreshed
+2026-09-27 10:18:06 INFO Connection reset by peer
+2026-09-28 10:19:13 INFO Cache refreshed
+2026-09-01 10:20:20 INFO Connection reset by peer
+2026-09-02 10:21:27 INFO Cache refreshed
+2026-09-03 10:22:34 INFO Connection reset by peer
+2026-09-04 10:23:41 INFO User login ok
+2026-09-05 10:24:48 ERROR Slow query 1.8s
+2026-09-06 10:25:55 INFO Cache refreshed
+2026-09-07 10:26:02 INFO Cache refreshed
+2026-09-08 10:27:09 ERROR Cache refreshed
+2026-09-09 10:28:16 ERROR Request /api/books 200
+2026-09-10 10:29:23 INFO User login ok
+2026-09-11 10:30:30 INFO Connection reset by peer
+2026-09-12 10:31:37 WARN User login ok
+2026-09-13 10:32:44 ERROR Request /api/books 200
+2026-09-14 10:33:51 INFO Request /api/books 200
+2026-09-15 10:34:58 WARN User login ok
+2026-09-16 10:35:05 INFO Slow query 1.8s
+2026-09-17 10:36:12 WARN Cache refreshed
+2026-09-18 10:37:19 INFO Cache refreshed
+2026-09-19 10:38:26 INFO Connection reset by peer
+2026-09-20 10:39:33 INFO User login ok
+2026-09-21 10:40:40 INFO Request /api/books 200
+2026-09-22 10:41:47 ERROR Connection reset by peer
+2026-09-23 10:42:54 INFO Request /api/books 200
+2026-09-24 10:43:01 ERROR Slow query 1.8s
+2026-09-25 10:44:08 ERROR User login ok
+2026-09-26 10:45:15 INFO Request /api/books 200
+2026-09-27 10:46:22 INFO Request /api/books 200
+2026-09-28 10:47:29 WARN Connection reset by peer
+2026-09-01 10:48:36 INFO Request /api/books 200
+2026-09-02 10:49:43 INFO Slow query 1.8s
+2026-09-03 10:50:50 WARN Connection reset by peer
+2026-09-04 10:51:57 INFO Connection reset by peer
+2026-09-05 10:52:04 ERROR Cache refreshed
+2026-09-06 10:53:11 INFO Cache refreshed
+2026-09-07 10:54:18 INFO Cache refreshed
+2026-09-08 10:55:25 ERROR Cache refreshed
+2026-09-09 10:56:32 INFO User login ok
+2026-09-10 10:57:39 INFO Request /api/books 200
+2026-09-11 10:58:46 ERROR User login ok
+2026-09-12 10:59:53 INFO User login ok

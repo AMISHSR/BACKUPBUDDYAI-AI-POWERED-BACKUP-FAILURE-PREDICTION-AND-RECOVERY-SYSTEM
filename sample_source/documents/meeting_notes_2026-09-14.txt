@@ -1,0 +1,9 @@
+Meeting: Sprint planning
+Attendees: Asha, Ravi, Meera, Kiran
+Decisions:
+1. Freeze API on Friday
+2. Ravi owns the database migration
+3. Demo on 30 September
+Action items:
+- Meera: update test plan
+- Kiran: fix login timeout bug

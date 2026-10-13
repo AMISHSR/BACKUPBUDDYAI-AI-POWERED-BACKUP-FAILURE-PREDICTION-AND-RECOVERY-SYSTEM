@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="prompt" id="boot">backupbuddy@{{ backend_label }}:~$ status --all</p>
+<h1>System status</h1>
+<p class="sub">Watching <code>{{ source }}</code>. {% if interval %}Auto-backup every {{ interval }} min.{% else %}Auto-backup is off; run it manually below.{% endif %}
+  {{ tracked }} files protected across {{ jobs_total }} jobs.</p>
+
+<div class="grid g-top">
+  <div class="panel score">
+    <div class="ring {{ m.label if m.score is not none else 'nodata' }}" style="--p: {{ m.score or 0 }}"><b>{{ m.score if m.score is not none else '--' }}</b></div>
+    <div>health score<br><span class="verdict {{ m.label }}">{{ m.label }}</span></div>
+  </div>
+  <div class="panel">
+    <b>Commands</b>
+    <p class="muted" style="margin:6px 0 0">Back up changed files, re-check every stored copy, or export the full log.</p>
+    <div class="actions">
+      <form method="post" action="{{ url_for('run') }}" data-busy="running backup..."><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button type="submit">run backup</button></form>
+      <form method="post" action="{{ url_for('verify') }}" data-busy="verifying..."><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="btn alt" type="submit" style="background:rgba(77,184,255,.06);color:var(--cyan);border-color:var(--cyan)">verify all</button></form>
+      <a class="btn warn" href="{{ url_for('report') }}">export report.csv</a>
+    </div>
+    <p class="muted" style="margin:14px 0 0;font-size:.82rem">score = 60% upload success + 40% verified share, minus 10 per recurring problem.</p>
+  </div>
+</div>
+
+{% if backend_label == 'local-sandbox' %}
+<div class="panel" style="margin-top:16px">
+  <h2 style="margin-top:0">Demo Lab</h2>
+  <p class="muted">Change sample files and simulate upload failures without editing .env or restarting the app. These controls affect local simulation only.</p>
+  <div class="actions">
+    <form method="post" action="{{ url_for('demo_change_files') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="btn alt" type="submit">1. change sample files</button></form>
+    <form method="post" action="{{ url_for('demo_failure') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="level" value="off"><button class="btn alt" type="submit">failures off</button></form>
+    <form method="post" action="{{ url_for('demo_failure') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="level" value="light"><button class="btn alt" type="submit">light 30%</button></form>
+    <form method="post" action="{{ url_for('demo_failure') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="level" value="heavy"><button class="btn warn" type="submit">heavy 70%</button></form>
+    <form method="post" action="{{ url_for('demo_failure') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="level" value="outage"><button class="btn warn" type="submit">outage 100%</button></form>
+  </div>
+  <p class="muted">Current simulated failure rate: <b>{{ (failure_rate * 100)|int }}%</b>. Set heavy/outage, change files, then run backup. Turn failures off and retry failed files to demonstrate recovery.</p>
+</div>
+{% endif %}
+
+<h2>metrics</h2>
+<div class="grid g-tiles">
+  <div class="tile"><b>{{ m.total }}</b><span>files processed</span></div>
+  <div class="tile ok"><b>{{ m.ok }}</b><span>successful backups</span></div>
+  <div class="tile {{ 'bad' if m.bad }}"><b>{{ m.bad }}</b><span>failed backups</span></div>
+  <div class="tile {{ 'ok' if m.success_rate is not none and m.success_rate >= 90 else 'bad' if m.success_rate is not none }}"><b>{{ m.success_rate ~ '%' if m.success_rate is not none else '--' }}</b><span>success rate</span></div>
+  <div class="tile {{ 'bad' if m.integrity_issues else 'ok' }}"><b>{{ m.integrity_issues }}</b><span>integrity mismatches</span></div>
+  <div class="tile"><b>{{ m.ver_rate }}%</b><span>verified {{ '(last scan)' if m.has_verification else '(at upload)' }}</span></div>
+  <div class="tile {{ 'warn' if m.retries }}"><b>{{ m.retries }}</b><span>retry attempts</span></div>
+  <div class="tile"><b>{{ m.retry_recovery ~ '%' if m.retry_recovery is not none else '--' }}</b><span>retry recovery</span></div>
+  <div class="tile"><b>{{ m.avg_ms }} ms</b><span>avg upload time</span></div>
+  <div class="tile {{ 'bad' if m.recurring }}"><b>{{ m.recurring }}</b><span>recurring errors</span></div>
+</div>
+
+<h2>threat detection</h2>
+{% if patterns %}
+  {% for p in patterns %}
+  <div class="threat">
+    <h3>{{ p.title }}: {{ p.occurrences }} failures in {{ p.jobs }} job(s)</h3>
+    <div class="m">{{ p.meaning }} Last seen {{ p.last_seen }} UTC.</div>
+    <ul>{% for s in p.steps[:2] %}<li>{{ s }}</li>{% endfor %}</ul>
+    <a class="btn alt" href="{{ url_for('analyze', error_type=p.error_type) }}">analyze with AI</a>
+  </div>
+  {% endfor %}
+{% else %}
+  <div class="clear">no recurring failures in the last 24 hours</div>
+{% endif %}
+
+<h2>live log</h2>
+<div class="console" role="log" aria-label="Recent backup events">
+  {% for l in logs %}
+    <div class="ln"><span class="t">{{ l.created[11:] }}</span>
+      {% if l.status == 'SUCCESS' %}<span class="ok"> OK   </span><span class="f">{{ l.path }}</span>
+        <span class="d"> {{ l.size_bytes|fsize }} {{ l.duration_ms }}ms sha256:{{ l.checksum[:10] }}{% if l.attempts > 1 %} retries={{ l.attempts - 1 }}{% endif %}</span>
+      {% else %}<span class="bad"> FAIL </span><span class="f">{{ l.path }}</span>
+        <span class="bad"> {{ l.error_type }}</span><span class="d"> tries={{ l.attempts }}</span>{% endif %}
+    </div>
+  {% else %}
+    <div class="empty">$ no events yet. run a backup to see activity here.</div>
+  {% endfor %}
+</div>
+
+<h2>last {{ bars|length }} jobs</h2>
+{% if bars %}
+<div class="chart">
+  {% for b in bars %}
+  <a href="{{ url_for('job_detail', job_id=b.id) }}" class="{{ 'f' if b.status=='FAILED' else 'p' if b.status=='PARTIAL' else '' }}"
+     title="Job {{ b.id }}: {{ b.pct }}% uploaded"><i style="height:{{ b.pct }}%"></i>#{{ b.id }}</a>
+  {% endfor %}
+</div>
+{% else %}<div class="empty">no jobs yet</div>{% endif %}
+
+<h2>recovery log</h2>
+{% if restores %}
+<div class="wide"><table>
+  <tr><th>time (utc)</th><th>file</th><th>version</th><th>restored to</th></tr>
+  {% for r in restores %}<tr><td>{{ r.created }}</td><td>{{ r.path }}</td><td><code>{{ r.version_id }}</code></td><td><code>{{ r.dest }}</code></td></tr>{% endfor %}
+</table></div>
+{% else %}<div class="empty">no restores yet. open a file under "files" to restore a version.</div>{% endif %}
+{% endblock %}

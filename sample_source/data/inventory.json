@@ -1,0 +1,602 @@
+[
+ {
+  "sku": "BK-0001",
+  "title": "Book 1",
+  "copies": 9
+ },
+ {
+  "sku": "BK-0002",
+  "title": "Book 2",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0003",
+  "title": "Book 3",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0004",
+  "title": "Book 4",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0005",
+  "title": "Book 5",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0006",
+  "title": "Book 6",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0007",
+  "title": "Book 7",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0008",
+  "title": "Book 8",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0009",
+  "title": "Book 9",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0010",
+  "title": "Book 10",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0011",
+  "title": "Book 11",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0012",
+  "title": "Book 12",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0013",
+  "title": "Book 13",
+  "copies": 9
+ },
+ {
+  "sku": "BK-0014",
+  "title": "Book 14",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0015",
+  "title": "Book 15",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0016",
+  "title": "Book 16",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0017",
+  "title": "Book 17",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0018",
+  "title": "Book 18",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0019",
+  "title": "Book 19",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0020",
+  "title": "Book 20",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0021",
+  "title": "Book 21",
+  "copies": 11
+ },
+ {
+  "sku": "BK-0022",
+  "title": "Book 22",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0023",
+  "title": "Book 23",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0024",
+  "title": "Book 24",
+  "copies": 11
+ },
+ {
+  "sku": "BK-0025",
+  "title": "Book 25",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0026",
+  "title": "Book 26",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0027",
+  "title": "Book 27",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0028",
+  "title": "Book 28",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0029",
+  "title": "Book 29",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0030",
+  "title": "Book 30",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0031",
+  "title": "Book 31",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0032",
+  "title": "Book 32",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0033",
+  "title": "Book 33",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0034",
+  "title": "Book 34",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0035",
+  "title": "Book 35",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0036",
+  "title": "Book 36",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0037",
+  "title": "Book 37",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0038",
+  "title": "Book 38",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0039",
+  "title": "Book 39",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0040",
+  "title": "Book 40",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0041",
+  "title": "Book 41",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0042",
+  "title": "Book 42",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0043",
+  "title": "Book 43",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0044",
+  "title": "Book 44",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0045",
+  "title": "Book 45",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0046",
+  "title": "Book 46",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0047",
+  "title": "Book 47",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0048",
+  "title": "Book 48",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0049",
+  "title": "Book 49",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0050",
+  "title": "Book 50",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0051",
+  "title": "Book 51",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0052",
+  "title": "Book 52",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0053",
+  "title": "Book 53",
+  "copies": 11
+ },
+ {
+  "sku": "BK-0054",
+  "title": "Book 54",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0055",
+  "title": "Book 55",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0056",
+  "title": "Book 56",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0057",
+  "title": "Book 57",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0058",
+  "title": "Book 58",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0059",
+  "title": "Book 59",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0060",
+  "title": "Book 60",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0061",
+  "title": "Book 61",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0062",
+  "title": "Book 62",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0063",
+  "title": "Book 63",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0064",
+  "title": "Book 64",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0065",
+  "title": "Book 65",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0066",
+  "title": "Book 66",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0067",
+  "title": "Book 67",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0068",
+  "title": "Book 68",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0069",
+  "title": "Book 69",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0070",
+  "title": "Book 70",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0071",
+  "title": "Book 71",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0072",
+  "title": "Book 72",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0073",
+  "title": "Book 73",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0074",
+  "title": "Book 74",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0075",
+  "title": "Book 75",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0076",
+  "title": "Book 76",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0077",
+  "title": "Book 77",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0078",
+  "title": "Book 78",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0079",
+  "title": "Book 79",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0080",
+  "title": "Book 80",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0081",
+  "title": "Book 81",
+  "copies": 9
+ },
+ {
+  "sku": "BK-0082",
+  "title": "Book 82",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0083",
+  "title": "Book 83",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0084",
+  "title": "Book 84",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0085",
+  "title": "Book 85",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0086",
+  "title": "Book 86",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0087",
+  "title": "Book 87",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0088",
+  "title": "Book 88",
+  "copies": 11
+ },
+ {
+  "sku": "BK-0089",
+  "title": "Book 89",
+  "copies": 1
+ },
+ {
+  "sku": "BK-0090",
+  "title": "Book 90",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0091",
+  "title": "Book 91",
+  "copies": 9
+ },
+ {
+  "sku": "BK-0092",
+  "title": "Book 92",
+  "copies": 9
+ },
+ {
+  "sku": "BK-0093",
+  "title": "Book 93",
+  "copies": 6
+ },
+ {
+  "sku": "BK-0094",
+  "title": "Book 94",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0095",
+  "title": "Book 95",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0096",
+  "title": "Book 96",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0097",
+  "title": "Book 97",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0098",
+  "title": "Book 98",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0099",
+  "title": "Book 99",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0100",
+  "title": "Book 100",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0101",
+  "title": "Book 101",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0102",
+  "title": "Book 102",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0103",
+  "title": "Book 103",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0104",
+  "title": "Book 104",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0105",
+  "title": "Book 105",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0106",
+  "title": "Book 106",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0107",
+  "title": "Book 107",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0108",
+  "title": "Book 108",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0109",
+  "title": "Book 109",
+  "copies": 3
+ },
+ {
+  "sku": "BK-0110",
+  "title": "Book 110",
+  "copies": 7
+ },
+ {
+  "sku": "BK-0111",
+  "title": "Book 111",
+  "copies": 8
+ },
+ {
+  "sku": "BK-0112",
+  "title": "Book 112",
+  "copies": 10
+ },
+ {
+  "sku": "BK-0113",
+  "title": "Book 113",
+  "copies": 11
+ },
+ {
+  "sku": "BK-0114",
+  "title": "Book 114",
+  "copies": 4
+ },
+ {
+  "sku": "BK-0115",
+  "title": "Book 115",
+  "copies": 12
+ },
+ {
+  "sku": "BK-0116",
+  "title": "Book 116",
+  "copies": 9
+ },
+ {
+  "sku": "BK-0117",
+  "title": "Book 117",
+  "copies": 11
+ },
+ {
+  "sku": "BK-0118",
+  "title": "Book 118",
+  "copies": 2
+ },
+ {
+  "sku": "BK-0119",
+  "title": "Book 119",
+  "copies": 5
+ },
+ {
+  "sku": "BK-0120",
+  "title": "Book 120",
+  "copies": 5
+ }
+]

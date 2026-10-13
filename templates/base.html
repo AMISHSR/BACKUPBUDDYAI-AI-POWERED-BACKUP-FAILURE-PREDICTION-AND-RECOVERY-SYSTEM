@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}BackupBuddy AI{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="logo">BackupBuddy//AI<small>cloud backup monitor</small></div>
+    <nav>
+      {% set ep = request.endpoint %}
+      <a href="{{ url_for('dashboard') }}" class="{{ 'on' if ep == 'dashboard' }}">status</a>
+      <a href="{{ url_for('jobs') }}" class="{{ 'on' if ep in ('jobs','job_detail') }}">history</a>
+      <a href="{{ url_for('files') }}" class="{{ 'on' if ep in ('files','file_versions') }}">files</a>
+      <a href="{{ url_for('verify') }}" class="{{ 'on' if ep == 'verify' }}">integrity</a>
+      <a href="{{ url_for('alerts') }}" class="{{ 'on' if ep == 'alerts' }}">alerts {% if unread_alerts %}<span class="alert-count">{{ unread_alerts }}</span>{% endif %}</a>
+      <a href="{{ url_for('ai_risk') }}" class="{{ 'on' if ep == 'ai_risk' }}">AI risk</a>
+      <a href="{{ url_for('audit_page') }}" class="{{ 'on' if ep == 'audit_page' }}">security audit</a>
+    </nav>
+    {% if auth_enabled %}
+    <div class="sidefoot" style="margin-bottom:10px">
+      <span class="dot"></span>signed in as {{ logged_in_user }}
+      <form method="post" action="{{ url_for('logout') }}" style="margin-top:8px">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="btn alt" type="submit" style="width:100%">sign out</button>
+      </form>
+    </div>
+    {% endif %}
+    <div class="sidefoot"><span class="dot"></span>{{ backend_label }}</div>
+  </aside>
+  <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for cat, msg in messages %}<div class="flash {{ cat }}">{{ msg }}</div>{% endfor %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+</div>
+<script>
+// Types the prompt line once per browser session; skipped for reduced motion.
+(function () {
+  var el = document.getElementById("boot");
+  if (!el) return;
+  var text = el.textContent, seen = false;
+  try { seen = sessionStorage.getItem("bb_boot") === "1"; } catch (e) {}
+  if (seen || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  try { sessionStorage.setItem("bb_boot", "1"); } catch (e) {}
+  el.textContent = ""; var i = 0;
+  (function tick() { if (i <= text.length) { el.textContent = text.slice(0, i++); setTimeout(tick, 28); } })();
+})();
+document.querySelectorAll("form[data-busy]").forEach(function (f) {
+  f.addEventListener("submit", function () {
+    var b = f.querySelector("button"); if (b) b.textContent = f.dataset.busy;
+  });
+});
+</script>
+</body>
+</html>

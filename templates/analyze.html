@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Analysis{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy:~$ analyze {{ error_type }}</p>
+<h1>{{ info.title }}</h1>
+<p class="sub">Error type <code>{{ error_type }}</code>. {{ info.meaning }}</p>
+
+<h2>recommended steps</h2>
+<div class="advice panel"><ul>{% for s in info.steps %}<li>{{ s }}</li>{% endfor %}</ul></div>
+
+<h2><span class="ai-tag">ai</span> explanation</h2>
+{% if ai_text %}<pre>{{ ai_text }}</pre>
+  <p class="muted">This is a possible diagnosis from the recorded evidence, not proof of the cause. Treat it as a suggestion.</p>
+{% elif ai_enabled %}<div class="empty">the AI service returned nothing. use the steps above.</div>
+{% else %}<div class="empty">AI is off. Add <code>ANTHROPIC_API_KEY</code> to <code>.env</code> and restart for a tailored explanation.
+  Only the error type, count and a sanitised message are sent, never file paths or file contents.</div>{% endif %}
+
+{% if history %}
+<h2>saved analyses</h2>
+{% for h in history %}<p class="muted">{{ h.created }} utc</p><pre>{{ h.summary }}</pre>{% endfor %}
+{% endif %}
+<p><a href="{{ url_for('dashboard') }}">&lt; back to status</a></p>
+{% endblock %}

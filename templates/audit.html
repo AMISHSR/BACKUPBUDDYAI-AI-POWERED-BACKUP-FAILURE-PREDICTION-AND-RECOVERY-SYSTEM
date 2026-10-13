@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Security Audit | BackupBuddy AI{% endblock %}
+{% block content %}
+<h1>Security audit trail</h1>
+<p class="sub">Records sensitive application actions and their outcomes. This is an audit trail, not a replacement for user authentication or AWS IAM.</p>
+{% if rows %}
+<div class="wide"><table>
+<tr><th>Time (UTC)</th><th>Action</th><th>Resource</th><th>Outcome</th><th>Details</th></tr>
+{% for row in rows %}<tr><td>{{ row.created }}</td><td>{{ row.action }}</td><td><code>{{ row.resource }}</code></td><td><span class="{{ 'bad' if row.outcome == 'FAILED' else 'ok' }}">{{ row.outcome }}</span></td><td>{{ row.details }}</td></tr>{% endfor %}
+</table></div>
+{% else %}<div class="empty">No audit events yet. Run a backup, verify files, or restore a version.</div>{% endif %}
+{% endblock %}

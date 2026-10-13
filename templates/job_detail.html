@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Job #{{ job.id }}{% endblock %}
+{% block content %}
+<p class="prompt">backupbuddy:~$ job show {{ job.id }}</p>
+<h1>Job #{{ job.id }} <span class="tag {{ job.status }}">{{ job.status }}</span></h1>
+<p class="sub">Started {{ job.started }} UTC, trigger: {{ job.trigger }}.</p>
+<div class="stats-inline">
+  <span>uploaded <b>{{ job.uploaded }}</b></span><span>skipped (unchanged) <b>{{ job.skipped }}</b></span><span>failed <b>{{ job.failed }}</b></span>
+</div>
+
+{% if job.failed %}
+<form method="post" action="{{ url_for('retry', job_id=job.id) }}" data-busy="retrying..."><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="btn warn" type="submit" style="color:var(--amber);border-color:var(--amber);background:rgba(255,181,71,.06)">retry failed files</button></form>
+{% endif %}
+
+<h2>files in this job</h2>
+{% if files %}
+<div class="wide"><table>
+  <tr><th>file</th><th>result</th><th>size</th><th>time</th><th>tries</th><th>verified</th><th>details</th></tr>
+  {% for f in files %}
+  <tr>
+    <td><code>{{ f.path }}</code></td>
+    <td><span class="tag {{ f.status }}">{{ f.status }}</span></td>
+    <td>{{ f.size_bytes|fsize }}</td><td>{{ f.duration_ms }} ms</td>
+    <td>{{ f.attempts }}</td>
+    <td>{{ 'yes' if f.verified else 'no' }}</td>
+    <td>{% if f.status == 'FAILED' %}<a href="{{ url_for('analyze', error_type=f.error_type) }}">{{ f.error_type }}</a> {{ f.error_message }}
+        {% else %}<span class="muted">sha256:{{ f.checksum[:16] }}</span>{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table></div>
+{% else %}<div class="empty">nothing uploaded: every file was unchanged.</div>{% endif %}
+{% endblock %}

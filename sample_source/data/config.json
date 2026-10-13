@@ -1,0 +1,14 @@
+{
+  "app": "library",
+  "version": "1.4.2",
+  "debug": false,
+  "db": {
+    "host": "localhost",
+    "port": 5432
+  },
+  "features": [
+    "search",
+    "reserve",
+    "remind"
+  ]
+}
